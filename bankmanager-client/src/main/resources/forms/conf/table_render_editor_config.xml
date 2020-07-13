@@ -9,12 +9,17 @@
       <com.ontimize.gui.table.PercentCellRenderer rendererid="percent" />
       <com.ontimize.gui.table.RealCellRenderer rendererid="real" />
       
-       <com.ontimize.gui.table.ComboReferenceCellRenderer 
-         rendererid="comboReferenceTypeCustomer" 
-         entity="CustomerService.customerType" cod="CUSTOMERTYPEID" 
-         cols="DESCRIPTION" parentkeys="CUSTOMERTYPEID"/>
+     
+         <com.ontimize.gui.table.ComboReferenceCellRenderer 
+         rendererid="comboReferenceTypeCustomer" entity="CustomerService.customerType" cod="CUSTOMERTYPEID" cols="DESCRIPTION" parentkeys="CUSTOMERTYPEID"/>
+      <com.ontimize.gui.table.ComboReferenceCellRenderer 
+  rendererid="comboReferenceAccountCustomer" entity="CustomerService.customer" cod="CUSTOMERID" cols="NAME;SURNAME" parentkeys="CUSTOMERID" separator=" "/>
          
          
+      <com.ontimize.gui.table.ComboReferenceCellRenderer 
+         rendererid="comboReferenceTypeMovement" entity="MovementService.movementType" cod="MOVEMENTTYPEID" cols="DESCRIPTION" parentkeys="MOVEMENTTYPEID"/>
+  
+   
    </TableRenderers>
    <TableEditors>
       <com.ontimize.gui.table.BooleanCellEditor editorid="boolean" />

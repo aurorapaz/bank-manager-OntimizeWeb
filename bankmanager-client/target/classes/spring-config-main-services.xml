@@ -25,6 +25,12 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
       <property name="serviceInterface" value="com.imatia.jee.bankmanager.common.base.services.ICustomerService"></property>
    </bean>
 
+
+<bean id="MovementService" class="com.ontimize.jee.common.hessian.OntimizeHessianProxyFactoryBean" lazy-init="true">
+      <property name="proxyFactory" ref="hessianProxyFactory" />
+      <property name="serviceRelativeUrl" value="/bankmanager-jee/services/hessian/movementservice" />
+      <property name="serviceInterface" value="com.imatia.jee.bankmanager.common.base.services.IMovementService" />
+   </bean>
 <!-- ___________ -->
 	
 	
