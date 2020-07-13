@@ -27,5 +27,11 @@
 	<ToolbarListener
 		class="com.imatia.jee.bankmanager.client.AppToolbarListener" />
 
-	<FormManager id="manager-about" form="forms/about/formabout.xml" imanager="com.imatia.jee.bankmanager.client.utils.BasicInteractionManagerExpanded"/>
+	 <FormManager id="manager-about" form="forms/about/formabout.xml"
+  imanager="com.imatia.jee.bankmanager.client.utils.BasicInteractionManagerExpanded" />
+ <FormManager id="manager-branch" form="forms/branches/formBranches-detail.xml"
+  imanager="com.imatia.jee.bankmanager.client.utils.BasicInteractionManagerExpanded"
+  delayedload="yes" tree="forms/branches/treeBranches.xml" />
+
+
 </com.imatia.jee.bankmanager.client.Application>
