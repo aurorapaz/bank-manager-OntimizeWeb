@@ -26,6 +26,9 @@
    <MenuListener class="com.imatia.jee.bankmanager.client.AppMenuListener" />
    <ToolbarListener class="com.imatia.jee.bankmanager.client.AppToolbarListener" />
 
+
+
+<!-- 	COSAS NUEVAS -->
    <FormManager id="manager-about" form="forms/about/formabout.xml"
       imanager="com.imatia.jee.bankmanager.client.utils.BasicInteractionManagerExpanded" />
    <FormManager id="manager-branch" form="forms/branches/formBranches-detail.xml"
@@ -38,4 +41,9 @@
    <FormManager id="manager-account" form="forms/accounts/formAccounts-detail.xml" 
       imanager="com.imatia.jee.bankmanager.client.managers.accounts.IMAccounts"
       delayedload="yes" tree="forms/accounts/treeAccounts.xml"/>
+      <FormManager id="manager-employee" form="forms/employees/formEmployees-detail.xml"
+  imanager="com.imatia.jee.bankmanager.client.utils.BasicInteractionManagerExpanded"
+  delayedload="yes" tree="forms/employees/treeEmployees.xml" />
+<!--   ________________ -->
+  
 </com.imatia.jee.bankmanager.client.Application>
