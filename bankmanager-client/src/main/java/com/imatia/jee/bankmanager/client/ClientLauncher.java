@@ -29,6 +29,7 @@ public class ClientLauncher {
 	public static void main(String[] args) {
 		DefaultXMLParametersManager.setXMLDefaultParameterFile("ontimize-configuration-parameters-static-values.xml");
 		DefaultXMLParametersManager.setXMLDefaultParameterFile("ontimize-configuration-parameters-ui.xml");
+		Table.rendererEditorConfigurationFile = "forms/conf/table_render_editor_config.xml";
 		OntimizeHessianHttpClientSessionProcessorFactory.ENCRYPT = false;
 		System.setProperty(MathExpressionParserFactory.MATH_EXPRESSION_PARSER_PROPERTY, MathExpressionParser.MESP);
 //		Table.XLS_EXPORT_CLASS = XLSExporterFactory.POI_3_5;
