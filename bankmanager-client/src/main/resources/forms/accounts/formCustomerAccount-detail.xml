@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form entity="BranchService.customerA" keys="CUSTOMERACCOUNTID"
+	columns="ACCOUNTID;CUSTOMERID;CUSTOMERACCOUNTID" title="NOVO CLIENTE">
+	<FormHeader standardbuttons="yes" />
+	<Column >
+							
+						<TextDataField attr="ACCOUNTID" text="ACCOUNTID"
+							dim="text" />
+			 <ReferenceComboDataField attr="CUSTOMERID" cod="CUSTOMERID" codInteger="yes" codvisible="no" cols="CUSTOMERID" entity="CustomerService.customer" dim="text" />
+	</Column>
+</Form>

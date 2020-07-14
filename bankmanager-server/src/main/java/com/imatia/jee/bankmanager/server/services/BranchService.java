@@ -13,6 +13,9 @@ import org.springframework.transaction.annotation.Transactional;
 import com.imatia.jee.bankmanager.common.base.services.IBranchService;
 import com.imatia.jee.bankmanager.server.dao.AccountDao;
 import com.imatia.jee.bankmanager.server.dao.BranchDao;
+import com.imatia.jee.bankmanager.server.dao.CustomerAccountDao;
+import com.imatia.jee.bankmanager.server.dao.CustomerDao;
+import com.imatia.jee.bankmanager.server.dao.MovementDao;
 import com.ontimize.db.EntityResult;
 import com.ontimize.jee.common.exceptions.OntimizeJEERuntimeException;
 import com.ontimize.jee.server.dao.DefaultOntimizeDaoHelper;
@@ -22,7 +25,35 @@ public class BranchService implements IBranchService{
 
     private static final Logger logger = LoggerFactory.getLogger(BranchService.class);
     @Autowired private AccountDao accountDao;
+    @Autowired private MovementDao movementDao;
+
+    @Autowired private CustomerAccountDao customerADao;
     @Autowired private DefaultOntimizeDaoHelper daoHelper;
+    
+    @Autowired private BranchDao branchDao;
+ 
+    @Override
+    public EntityResult branchQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.query(this.branchDao, keysValues, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult branchInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.insert(this.branchDao, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult branchUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.update(this.branchDao, attributes, keyValues);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult branchDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.delete(this.branchDao, keyValues);
+    }
  
     // ---- ACCOUNTS ----
     
@@ -83,4 +114,56 @@ public class BranchService implements IBranchService{
     public EntityResult accountDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
      return this.daoHelper.delete(this.accountDao, keyValues);
     }
+    
+    //--MOVEMENTS
+    
+    @Override
+    public EntityResult movementQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.query(this.movementDao, keysValues, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult movementInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.insert(this.movementDao, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult movementUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.update(this.movementDao, attributes, keyValues);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult movementDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.delete(this.movementDao, keyValues);
+    }
+    
+    //--CUSTOMERACCOUNT
+    
+    @Override
+    public EntityResult customeraccountsQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.query(this.customerADao, keysValues, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult customeraccountsInsert(Map<String, Object> attributes) throws OntimizeJEERuntimeException {
+        return this.daoHelper.insert(this.customerADao, attributes);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult customeraccountsUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.update(this.customerADao, attributes, keyValues);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public EntityResult customeraccountsDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+        return this.daoHelper.delete(this.customerADao, keyValues);
+    }
+    
+    
 }

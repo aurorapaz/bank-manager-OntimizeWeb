@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FormExt entity="BranchService.movement" keys="ACCOUNTID"
+	title="">
+	<FormHeader standardbuttons="yes" />
+	<Row expand="yes">
+		<Column title="NOVO MOVEMENTO">
+			<Row>
+				<Column>
+					<Row>
+						<TextDataField attr="MOVEMENTID" text="MOVEMENTID"
+							dim="text" />
+						<TextDataField attr="MOVEMENTTYPEID" text="MOVEMENTTYPEID"
+							dim="text" />
+						<TextDataField attr="ACCOUNTID" text="ACCOUNTID"
+							dim="text" />
+					</Row>
+					<Row>
+						<DateDataField attr="DATE_" text="DATE_" />
+						<TextDataField attr="CONCEPT" text="CONCEPT"
+							dim="text" />
+					</Row>
+				</Column>
+				<Column>
+					<TextDataField attr="MOVEMENT" text="MOVEMENT" dim="text" />
+					<TextDataField attr="COMMENTS" text="COMMENTS" dim="text" />
+
+				</Column>
+			</Row>
+		</Column>
+	</Row>
+</FormExt>

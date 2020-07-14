@@ -30,10 +30,16 @@
    </Row>
    <Row expand="yes">
       <Column title="account.CustomerAccounts">
-         <Table entity="CustomerService.customerAccount" cols="CUSTOMERACCOUNTID;CUSTOMERID;ACCOUNTID" controls="yes" key="CUSTOMERACCOUNTID" refreshbutton="yes" parentkeys="ACCOUNTID" visiblecols="CUSTOMERID" renderers="CUSTOMERID:comboReferenceAccountCustomer" />
+         <Table entity="CustomerService.customerAccount" cols="CUSTOMERACCOUNTID;CUSTOMERID;ACCOUNTID" 
+         controls="yes" key="CUSTOMERID" refreshbutton="yes" parentkeys="ACCOUNTID;CUSTOMERID" 
+         visiblecols="CUSTOMERID" form="formCustomerAccount-detail.xml" renderers="CUSTOMERID:comboReferenceAccountCustomer" />
+         	
+   
       </Column>
       <Column title="account.MovementsAccount">
-         <Table entity="MovementService.movement" cols="MOVEMENTID;ACCOUNTID;DATE_;CONCEPT;MOVEMENTTYPEID;MOVEMENT;COMMENTS" controls="yes" key="MOVEMENTID" refreshbutton="yes" visiblecols="DATE_;CONCEPT;MOVEMENTTYPEID;MOVEMENT;COMMENTS" parentkeys="ACCOUNTID" renderers="MOVEMENTTYPEID:comboReferenceTypeMovement" sumrow="MOVEMENT" />
+         <Table entity="MovementService.movement" cols="MOVEMENTID;ACCOUNTID;DATE_;CONCEPT;MOVEMENTTYPEID;MOVEMENT;COMMENTS" 
+         controls="yes" key="MOVEMENTID" refreshbutton="yes" visiblecols="DATE_;CONCEPT;MOVEMENTTYPEID;MOVEMENT;COMMENTS" 
+         parentkeys="ACCOUNTID" form="formMovementAccount-detail.xml" renderers="MOVEMENTTYPEID:comboReferenceTypeMovement" sumrow="MOVEMENT" />
       </Column>
    </Row>
 </FormExt>

@@ -193,4 +193,5 @@
 		<oss:mapping path="/services/rest/**" allowed-methods="GET, PUT, POST, DELETE"
 			exposed-headers="X-Auth-Token, Content-Disposition" /> 
 	</oss:cors>
+	
 </beans>
