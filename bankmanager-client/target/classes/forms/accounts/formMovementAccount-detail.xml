@@ -7,8 +7,6 @@
 			<Row>
 				<Column>
 					<Row>
-						<TextDataField attr="MOVEMENTID" text="MOVEMENTID"
-							dim="text" />
 						<TextDataField attr="MOVEMENTTYPEID" text="MOVEMENTTYPEID"
 							dim="text" />
 						<TextDataField attr="ACCOUNTID" text="ACCOUNTID"

@@ -31,7 +31,7 @@
    <Row expand="yes">
       <Column title="account.CustomerAccounts">
          <Table entity="CustomerService.customerAccount" cols="CUSTOMERACCOUNTID;CUSTOMERID;ACCOUNTID" 
-         controls="yes" key="CUSTOMERID" refreshbutton="yes" parentkeys="ACCOUNTID;CUSTOMERID" 
+         controls="yes" key="CUSTOMERACCOUNTID" refreshbutton="yes" parentkeys="ACCOUNTID;CUSTOMERID" 
          visiblecols="CUSTOMERID" form="formCustomerAccount-detail.xml" renderers="CUSTOMERID:comboReferenceAccountCustomer" />
          	
    
