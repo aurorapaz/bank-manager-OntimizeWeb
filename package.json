@@ -1,13 +1,13 @@
 {
-  "name": "ontimize-web-ngx-jee-seed",
+  "name": "bankmanager-web",
   "version": "4.0.1",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4299",
+    "start": "ng serve --port 4200 --host localhost -o",
     "production": "ng build --aot=false --target -prod",
-    "production-aot": "ontimize-web-ngx production-aot --project-name ontimize-web-ngx-jee-seed --href /ontimize-web-ngx-jee-seed/"
+    "production-aot": "ontimize-web-ngx production-aot --project-name bankmanager-web --href /bankmanager-web/"
   },
   "private": true,
   "engines": {
