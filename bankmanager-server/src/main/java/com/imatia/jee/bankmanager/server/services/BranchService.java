@@ -165,5 +165,21 @@ public class BranchService implements IBranchService{
         return this.daoHelper.delete(this.customerADao, keyValues);
     }
     
+    // ---- ACCOUNTS BALANCE ----
+
+    @Override
+    public EntityResult accountBalanceQuery(Map<String, Object> keysValues, List<String> attributes) throws OntimizeJEERuntimeException {
+       return this.daoHelper.query(this.accountDao, keysValues, attributes, AccountDao.QUERY_VACCOUNTBALANCE);
+    }
+
+    @Override
+    public EntityResult accountBalanceUpdate(Map<String, Object> attributes, Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+       return this.accountUpdate(attributes, keyValues);
+    }
+
+    @Override
+    public EntityResult accountBalanceDelete(Map<String, Object> keyValues) throws OntimizeJEERuntimeException {
+       return this.accountDelete(keyValues);
+    }
     
 }
