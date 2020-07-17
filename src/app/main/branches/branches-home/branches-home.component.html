@@ -1,9 +1,20 @@
 <o-form-layout-manager title="{{'BRANCHES' | oTranslate }}" separator=" " mode="dialog" label-columns="NAME">
   <div fxFlex>
-     <o-table fxFlex attr="branchesTable" service="branches" entity="branch" keys="OFFICEID" 
-       columns="NAME;ADDRESS;STARTDATE;PHONE" visible-columns="NAME;ADDRESS;STARTDATE;PHONE" 
-       query-rows="15">
-       <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
-     </o-table>
+    <o-list #list attr="branchesList" service="branches" entity="branch"
+  keys="OFFICEID" columns="NAME;ADDRESS;STARTDATE;PHONE">
+  <mat-card *ngFor="let rowData of list.dataArray" [o-list-item]="rowData">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <img matListAvatar fxFill src="./assets/images/branch.png">
+      </div>
+      <mat-card-title>{{ rowData.NAME }}</mat-card-title>
+      <mat-card-subtitle>{{ rowData.ADDRESS }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ rowData.STARTDATE }}</p> <p>{{ rowData.PHONE }}</p>
+    </mat-card-content>
+  </mat-card>
+</o-list>
+
     </div>
    </o-form-layout-manager>

@@ -8,6 +8,7 @@ import { CustomersModule } from './customers/customers.module';
 import { EmployeesModule } from './employees/employees.module';
 import { BranchesModule } from './branches/branches.module';
 import { AccountsModule } from './accounts/accounts.module';
+import { SettingsModule } from './settings/settings.module'; 
 
 export function loadHomeModule() {
   return HomeModule;
@@ -28,6 +29,9 @@ export function loadBranchesModule(){
 export function loadAccountsModule(){
   return AccountsModule;
 }
+export function loadSettingsModule(){
+  return SettingsModule;
+}
 
 export const routes: Routes = [
   {
@@ -40,7 +44,8 @@ export const routes: Routes = [
       { path: 'customers', loadChildren: loadCustomersModule },
       { path: 'employees', loadChildren: loadEmployeesModule },
       { path: 'branches', loadChildren: loadBranchesModule },
-      { path: 'accounts', loadChildren: loadAccountsModule }
+      { path: 'accounts', loadChildren: loadAccountsModule },
+      { path: 'settings', loadChildren: loadSettingsModule }
     ]
   }
 ];
