@@ -7,11 +7,11 @@
       <div mat-card-avatar>
         <img matListAvatar fxFill src="./assets/images/branch.png">
       </div>
-      <mat-card-title>{{ rowData.NAME }}</mat-card-title>
-      <mat-card-subtitle>{{ rowData.ADDRESS }}</mat-card-subtitle>
+      <mat-card-title class="name">{{ rowData.NAME }}</mat-card-title>
+      <mat-card-subtitle class="add">{{ rowData.ADDRESS }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>{{ rowData.STARTDATE | date }}</p> <p>{{ rowData.PHONE }}</p>
+      <p>{{ rowData.STARTDATE | date }}</p> <p class="ph">{{ rowData.PHONE }}</p>
     </mat-card-content>
   </mat-card>
 </o-list>

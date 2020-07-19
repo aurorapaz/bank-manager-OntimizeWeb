@@ -5,11 +5,11 @@
     
     <o-grid-item *ngFor="let list of grid.dataArray">
       <div  class="image">
-        <img src="./assets/images/customer.png">
+        <img src="./assets/images/customer.jpg" class="imag">
       </div>
       <o-column title-label="" appearance='outline'>
         <mat-divider fxFlex></mat-divider>
-        <div class="ID"> {{ list.ID }}</div>
+        <div class="ID" class="dni"> {{ list.ID }}</div>
         <div class="NAME"> {{ list.NAME }}</div>
         <div class="SURNAME"> {{ list.SURNAME }}</div>
         <div class="STARTDATE"> {{ list.STARTDATE | date }}</div>
@@ -17,7 +17,7 @@
         <mat-divider fxFlex></mat-divider>
           
       </o-column>
-    </o-grid-item>
+    </o-grid-item> 
     
   </o-grid>  
   </div>

@@ -55,5 +55,8 @@
   "INTERESRATE_MONTHLY": "% interés mensual",
   "BRANCH_INFORMATION":"Información de la sucursal",
   "CUSTOMERS_INFORMATION":"Clientes de la sucursal",
-  "BALANCE":"Balance"
+  "BALANCE":"Balance",
+  "VIEWS": "Vistas",
+  "WELCOME TO BANK MANAGER APP": "BIENVENIDO A LA APLICACION DE GESTION BANCARIA"
+
 }
