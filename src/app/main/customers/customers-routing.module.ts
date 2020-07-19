@@ -5,14 +5,14 @@ import { CustomersDetailComponent } from "./customers-detail/customers-detail.co
 import { CustomersNewComponent } from "./customers-new/customers-new.component";
 
 const routes: Routes = [{
-  path : '',
+  path: '',
   component: CustomersHomeComponent
 },
 {
   path: "new",
   component: CustomersNewComponent
 },
-{
+ {
   path: ":CUSTOMERID",
   component: CustomersDetailComponent
 }];

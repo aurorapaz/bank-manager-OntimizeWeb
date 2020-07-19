@@ -14,20 +14,20 @@ export const CONFIG: Config = {
   // By default is set as 'ontimize-web-uuid'.
   uuid: 'com.imatia.web.bankmanager',
 
-   // Title of the app
-   title: 'Bank Manager',
+  // Title of the app
+  title: 'Bank Manager',
 
-   //  Language of the application.
-   locale: 'es',
- 
-   // The service type used (Ontimize REST standart, Ontimize REST JEE
-   // or custom implementation) in the whole application.
-   serviceType: 'OntimizeEE',
- 
-   // Configuration parameters of application services.
-   servicesConfiguration: SERVICE_CONFIG,
- 
-   appMenuConfiguration: MENU_CONFIG,
- 
-   applicationLocales: ['es', 'en']
+  //  Language of the application.
+  locale: 'es',
+
+  // The service type used (Ontimize REST standart, Ontimize REST JEE
+  // or custom implementation) in the whole application.
+  serviceType: 'OntimizeEE',
+
+  // Configuration parameters of application services.
+  servicesConfiguration: SERVICE_CONFIG,
+
+  appMenuConfiguration: MENU_CONFIG,
+
+  applicationLocales: ['es', 'en']
 };

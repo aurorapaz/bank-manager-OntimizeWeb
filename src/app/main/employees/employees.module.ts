@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OntimizeWebModule } from "ontimize-web-ngx" ;
+import { OntimizeWebModule } from "ontimize-web-ngx";
 import { EmployeesRoutingModule } from './employees-routing.module';
-import { EmployeesHomeComponent } from "./employees-home/employees-home.component";
-import { EmployeesDetailComponent } from "./employees-detail/employees-detail.component";
+import { EmployeesHomeComponent } from './employees-home/employees-home.component';
+import { EmployeesDetailComponent } from './employees-detail/employees-detail.component';
 
 @NgModule({
   imports: [
@@ -11,9 +11,6 @@ import { EmployeesDetailComponent } from "./employees-detail/employees-detail.co
     OntimizeWebModule,
     EmployeesRoutingModule
   ],
-  declarations: [
-    EmployeesHomeComponent,
-    EmployeesDetailComponent
-  ]
+  declarations: [EmployeesHomeComponent, EmployeesDetailComponent]
 })
 export class EmployeesModule { }

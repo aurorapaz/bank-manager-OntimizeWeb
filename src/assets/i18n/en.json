@@ -14,7 +14,7 @@
   "ERROR_USER_REQUIRED": "Incorrect username.",
   "ERROR_PASS_REQUIRED": "Incorrect password.",
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password.",
-  "CUSTOMERS":"Customers",
+  "CUSTOMERS": "Customers",
   "ID": "Id.",
   "NAME": "Name",
   "SURNAME": "Surname",
@@ -54,10 +54,5 @@
   "INTERESRATE_MONTHLY": "Monthly interest rate",
   "BRANCH_INFORMATION":"Branch information",
   "CUSTOMERS_INFORMATION":"Branch customers information",
-  "BALANCE":"Balance",
-  "DATE_": "Date",
-  "CONCEPT": "Concept",
-  "MOVEMENT": "Movement",
-  "MOVEMENTTYPEID": "Movement type"
-  
+  "BALANCE":"Balance"
 }

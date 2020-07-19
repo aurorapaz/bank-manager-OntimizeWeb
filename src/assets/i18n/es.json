@@ -14,7 +14,7 @@
   "ERROR_USER_REQUIRED": "Nombre de usuario incorrecto.",
   "ERROR_PASS_REQUIRED": "Contraseña incorrecta.",
   "ERROR_USER_PASS_INCORRECT": "Usuario o contraseña incorrecta.",
-  "CUSTOMERS":"Clientes",
+  "CUSTOMERS": "Clientes",
   "ID": "Id.",
   "NAME": "Nombre",
   "SURNAME": "Apellido",
@@ -55,9 +55,5 @@
   "INTERESRATE_MONTHLY": "% interés mensual",
   "BRANCH_INFORMATION":"Información de la sucursal",
   "CUSTOMERS_INFORMATION":"Clientes de la sucursal",
-  "BALANCE":"Balance",
-  "DATE_": "Fecha",
-  "CONCEPT": "Concepto",
-  "MOVEMENT": "Movimiento",
-  "MOVEMENTTYPEID": "Tipo movimiento"
+  "BALANCE":"Balance"
 }
